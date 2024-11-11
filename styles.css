@@ -1,0 +1,244 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container for all Pages */
+.container, .dashboard-container {
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Admin Dashboard Styling */
+.dashboard-container {
+    width: 100%;
+    max-width: 600px;
+}
+
+.dashboard-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.dashboard-button {
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.dashboard-button:hover {
+    background-color: #2980b9;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="datetime-local"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+button, input[type="submit"] {
+    padding: 10px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #27ae60;
+}
+
+/* Message Styles */
+.message {
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #e1f5e1;
+    color: #2ecc71;
+    border: 1px solid #27ae60;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Error Message Styles */
+.error-message {
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #fce4e4;
+    color: #e74c3c;
+    border: 1px solid #e74c3c;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Recipe Grid Layout */
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.1); 
+}
+
+/* Recipe Card Styles */
+.recipe-card {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid #ddd;
+    background-color: rgba(255, 255, 255, 0.1); 
+}
+
+.recipe-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Recipe Card Content */
+.recipe-card h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.recipe-card p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.recipe-card p strong {
+    color: #333;
+}
+
+/* Add hover effect to the recipe card */
+.recipe-card p {
+    color: #777;
+}
+
+.recipe-card p:last-child {
+    font-size: 13px;
+    color: #888;
+    text-align: right;
+}
+
+/* No Recipes Found */
+.recipe-grid p {
+    color: #e74c3c;
+    font-size: 18px;
+}
+
+/* Media Queries for Responsive Layout */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .recipe-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .recipe-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .recipe-card {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Recipe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Update Recipe</h1>
+        <form action="update.php" method="POST">
+            <label for="id">Recipe ID:</label>
+            <input type="number" id="id" name="id" placeholder="Enter Recipe ID" required>
+
+            <label for="title">Recipe Title:</label>
+            <input type="text" id="title" name="title" placeholder="Enter Recipe Title" required>
+
+            <label for="ingredients">Ingredients:</label>
+            <textarea id="ingredients" name="ingredients" placeholder="Enter Ingredients" required></textarea>
+
+            <label for="instructions">Instructions:</label>
+            <textarea id="instructions" name="instructions" placeholder="Enter Instructions" required></textarea>
+
+            <label for="created_at">Creation Date:</label>
+            <input type="datetime-local" id="created_at" name="created_at" required>
+
+            <button type="submit">Update Recipe</button>
+        </form>
+    </div>
+</body>
+</html>

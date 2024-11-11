@@ -1,0 +1,108 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+
+h1, h2 {
+    font-size: 36px;
+    color: #333;
+}
+
+/* Header Section Styling */
+header {
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.2); 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.header-left h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #333;
+}
+
+.header-right {
+    display: flex;
+    gap: 10px;
+}
+
+.header-right .btn {
+    padding: 10px 10px;
+    
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.header-right .btn:hover {
+    background-color: #45a049;
+}
+
+/* Main Content Section */
+.nav-links {
+    margin-top: 50px; /* Adjust to avoid header overlap */
+}
+
+.nav-links .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.nav-links .btn:hover {
+    background-color: #45a049;
+}
+
+/* Media Queries for Responsive Layout */
+@media (max-width: 768px) {
+    .header-left h1 {
+        font-size: 24px;
+    }
+
+    .header-right .btn {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-left h1 {
+        font-size: 20px;
+    }
+
+    .header-right .btn {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+}

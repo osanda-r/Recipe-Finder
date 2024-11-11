@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Recipe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Search Recipe</h1>
+        <form action="search.php" method="POST">
+            <label for="id">Recipe ID:</label>
+            <input type="number" id="id" name="id" placeholder="Enter Recipe ID" required>
+            <button type="submit">Search Recipe</button>
+        </form>
+        <div id="result">
+            <!-- This is where search results will appear -->
+        </div>
+    </div>
+</body>
+</html>
